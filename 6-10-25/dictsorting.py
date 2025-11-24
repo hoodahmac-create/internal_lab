@@ -1,0 +1,11 @@
+dict1={1:234,3:23,2:333,7:189}
+dict4=sorted(dict1.values())
+dict3=sorted(dict1.values(),reverse=True)
+dict5=sorted(dict1.items())
+dict2=sorted(dict1.items(),reverse=True)
+print("SORTING BY VALUE")
+print(dict4)
+print(dict3)
+print("SORTING BY KEY")
+print(dict5)
+print(dict2)
