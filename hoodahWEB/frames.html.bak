@@ -1,0 +1,9 @@
+<html>
+	<frameset rows="30%,70%">
+	<frame src="f1.html" name="head">
+	<frameset cols="30%,70%">
+	<frame src="f2.html" name="link">
+	<frame src="f3.html" name="body">
+	</frameset>
+	</frameset>
+</html>

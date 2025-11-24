@@ -1,0 +1,8 @@
+<html>
+	<body>
+		<script>
+			var a ="hi hoe r u";
+			console.log(a);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>forms</title>
+		<style>
+			.one{
+				display: grid;
+				grid-template-columns: 150px 1fr;
+				gap: 10px 20px;
+				width: 400px;
+				margin: 0 auto;
+			}
+			#two{
+				display: grid;
+				grid-template-columns: 150px 30px 30px 30px 30px;
+				gap: 20px 20px;
+				width: 400px;
+				margin: 10 auto;
+			}
+			.three{
+			    display: grid;
+				row-gap: 15px;
+				column-gap: 10px;
+			}
+			button{
+				margin-left:200px;
+			}
+			
+		</style>
+	</head>
+	<body bgcolor="#c8c7d7">
+	<center><h1><b>Registration Form </b></h1></center>
+	<form>
+	<div class="one">
+		<label><b>First_Name</b></label>
+		<input type="text" name="fname">
+		<label><b>Last_Name</b></label>
+		<input type="text" name="lname">
+		<label><b>Password</b></label>
+		<input type="password" name="password">
+		<label><b>Address</b></label>
+		<textarea name="address" rows="2" cols="40" placeholder="Enter your address" maxlength="500" required>
+        </textarea>
+		<label><b>Mobile</b></label>
+		<input type="number">
+		<label><b>E-mail</b></label>
+		<input type="mail" name="email">
+		<label><b>Date-of-birth</b></label>
+		<input type="date" name="date">
+		</div>
+		<div id="two">
+		<label><b>Gender</b></label>
+		<input type="radio" name="gender" id="male" value="m" checked>
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="f">
+		<label for="female">Female</label>
+		</div>
+		<div class="one">
+		<label><b>Nationality</b></label>
+		<select name="nationality">
+			<option value="india">India</option>
+			<option value="saudi arabia">Saudi</option>
+			<option value="palestine">Palestini</option>
+			<option value="other">Other</option>
+		</select>
+		<fieldset style="width:370px">
+		<legend><b>Languages known</b></legend><br>
+		<input type="checkbox" name="malayalam">
+		<label>Malayalam</label><br>
+		<input type="checkbox" name="english">
+		<label>English</label><br>
+		<input type="checkbox" name="arabic">
+		<label>Arabic</label><br>
+		<input type="checkbox" name="hindi">
+		<label>Hindi</label>
+		</fieldset></div>
+		<div class="three">
+		<center><p><input type="submit" value="SUBMIT">
+		<button type="reset"><b>CANCEL</b></button></p></center></div>
+	</form>
+	</body>
+</html>

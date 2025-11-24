@@ -1,0 +1,55 @@
+<html>
+	<body>
+		<h1>Strings and math functions</h1>
+		<h3>Strings</h3>
+		<script>
+		document.writeln("<h5>PINTING STRINGS</h5>")
+		var s1="Welcome to js programmming"
+		document.writeln(s1,"<br>")
+		var s2=new String("Welcome to html")
+		var s3=`this is a 
+		mutiline string`
+		document.writeln(s2,"<br>")
+		document.writeln(s3,"<br>")
+		document.writeln("<h5>TYPE INDEX AND SEARCH:</h5>")
+		document.writeln(typeof s1,"<br>")
+		document.writeln("indexof j is ",s1.indexOf("j"),"<br>")
+		document.writeln("s is in ",s1.search("s"),"<br><br>")
+		document.writeln("<h5>STRING SLICING:</h5>")
+		document.writeln(s1.slice(0,7),"<br>")
+		document.writeln(s1.slice(10),"<br>")
+		document.writeln(s1.slice(-11),"<br>")
+		document.writeln(s1.slice(-11,-1),"<br>")
+		document.writeln(s1.substring(0,12),"<br>")
+		document.writeln(s1.substr(0,10),"<br>")
+		document.writeln(s1.replace("js","JavaScript"),"<br>")
+		var s3=s1.toUpperCase()
+		document.writeln(s3,"<br>")
+		document.writeln(s3.toLowerCase(),"<br>")
+		document.writeln(s1.concat(s2),"<br>")
+		document.writeln(s5=s3.trim(),"<br>")
+		document.writeln("charCodeAt() ",s1.charCodeAt(3),"<br>")
+		document.writeln("chatAt() ",s1.charAt(3),"<br>")
+		for(i=0;i<s2.length;++i)
+		{document.writeln(s2[i]+"<br>")
+		}
+		document.writeln("<h3>Math functions:</h3>")
+		document.writeln("Euler's number is:",Math.E+"<br>")
+		document.writeln("Value of pi is:",Math.PI+"<br>")
+		document.writeln("square root of:",Math.SQRT2+"<br>")
+		document.writeln("square root of:",Math.SQRT1_2+"<br>")
+		document.writeln("Log E to the base 2 is : ",Math.LOG2E+"<br>")
+		document.writeln("Absolute value of -5 is : ",Math.abs(-5)+"<br>")
+		document.writeln("cube root of 27 is : ",Math.cbrt(27)+"<br>")
+		document.writeln("Round up 2.45 : ",Math.ceil(2.45)+"<br>")
+		document.writeln(Math.exp(3)+"<br>")
+		document.writeln("2 to the power 3 is : ",Math.pow(2,3)+"<br>")
+		document.writeln("Minimum of 5, 2 and 1 is : ",Math.min(5,2,1 )+"<br>")
+		document.writeln("Maximum of 7,10, 3 and 1 is : ",Math.max(7,10,3,1)+"<br>")
+		document.writeln("Square root of 25 is : ",Math.sqrt(25)+"<br>")
+		document.writeln("Truncated value of 4.56 is ",Math.trunc(4.56)+"<br>")
+		document.writeln("Rounded value of 6.2 is ",Math.round(6.2)+"<br>")
+		document.writeln("Random number is ",Math.random()+"<br>")
+		</script>
+	</body>
+</html>

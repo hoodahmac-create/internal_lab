@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<style>
+			form {
+				display: grid;
+				grid-template-columns: 150px 1fr;
+				gap: 10px 20px;
+				width: 400px;
+				margin: 0 auto;
+			}
+			h2{
+				color:#8364A8;
+				font-family:cursive;
+				text-align:center;
+				font-size:37px;
+				margin-left:10px;
+			}
+			input{
+				background-color:#DDDCDD;
+				border:none;
+				height:20px;
+				border-radius:9px;
+			}
+			label{
+				font-size:17px;
+				font-weight: 700;
+			}
+			button{
+				background-color:#8364A8;
+				width:400px;
+				border:none;
+				height:30px;
+				border-radius:20px;
+				color:white;
+			}
+			button:hover{
+				background-color:#717171;
+			}
+		</style>
+		<script>
+			function validate(){
+				var passwd=document.getElementById("pwd").value;
+				var nme=document.getElementById("nam").value;
+				var phn=document.getElementById("mob").value;
+				var repass=document.getElementById("re").value;
+				if(nme==""){
+					alert("please enter your name");
+					return false;
+				}
+				for(var i=0;i<nme.length;i++){
+					if(!isNaN(nme[i])){
+						alert("Name should not contain numbers")
+						return false;
+					}
+				}
+				if(phn==""){
+					alert("Please enter a phone number");
+					return false;
+				}
+				for(var i=0;i<phn.length;i++){
+					if(isNaN(phn[i])){
+						alert("Please enter a valid number")
+						return false;
+					}
+				}
+				if(passwd==""){
+					alert("Enetr a password");
+					return false;
+				}
+				else if(passwd.length<8){
+					alert("Password requied at least 8 characters");
+					return false;
+				}
+				if(repass==""){
+					alert("Please re-enter the password");
+					return false;
+				}
+				if(passwd!=repass){
+					alert("The passwords do not match");
+					return false;
+				}
+	
+				alert("SUCCESSFULLY ENTERED!!");
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="para">
+		<h2>FORM VALIDATION</h2>
+		<form onsubmit="return validate()">
+		<label>Name</label>
+		<input type="text" id="nam">
+		<label>Phone Number</label>
+		<input type="number" id="mob">
+		<label>Password</label>
+		<input type="password" id="pwd">
+		<label>Re-enter Password</label>
+		<input type="password" id="re">
+		<button type="submit">S U B M I T</button>
+		</form>
+		</div>
+	</body>
+</html>

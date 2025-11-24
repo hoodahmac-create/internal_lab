@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>CSS table</title>
+		<style>
+			body{
+				background-color:#fsdfhs;
+				place-items: center; 
+			}
+			table{
+				border-collapse:collapse;
+				width:70%;
+				margin:auto;
+			}
+			th,tr{
+				border: 1px solid #ddd;
+				padding: 15px;
+				text-align:center;
+			}
+			tr{
+				background-color:#dbd2e6;
+			}
+			th{
+				background-color:#402f54;
+				color:white;
+			}
+			tr:nth-child(even){
+				background-color:#d3c8e0;
+			}
+			tr:hover{
+				background-color:#9479b5
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Reg No.</th>
+					<th>Name</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1234</td>
+					<td>Norhan</td>
+					<td>98</td>
+				</tr>
+				<tr>
+					<td>1274</td>
+					<td>Fehrin</td>
+					<td>97</td>
+				</tr>
+				<tr>
+					<td>1434</td>
+					<td>Zoharin</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>1734</td>
+					<td>Giannah</td>
+					<td>95</td>
+				</tr>
+			</tbody>
+		</table>
+</html>
